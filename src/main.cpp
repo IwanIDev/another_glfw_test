@@ -4,15 +4,15 @@
 
 int main(int argc, char const *argv[])
 {
-    printf("Hello, world!\n");
+	printf("Hello, world!\n");
 
-    Window window = Window();
-    if(window.init() != 0) {
-        printf("Window didn't init properly, exiting.");
-        return 1;
-    }
+	Window window = Window();
+	if(window.init() != 0) {
+		fprintf(stderr, "Window didn't init properly, exiting.\n");
+		return 1;
+	}
 
-    window.run();
+	window.run();
 
-    return 0;
+	return 0;
 }
