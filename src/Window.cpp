@@ -72,7 +72,7 @@ void Window::run()
 		ImGui::NewFrame();
 
 		ImGui::ShowDemoWindow();
-		
+
 		ImGui::Render();
 
 		glClear(GL_COLOR_BUFFER_BIT);
